@@ -49,6 +49,22 @@ class Practice_02{
 
     }
 
+    public void ConvertionsMenu(){
+
+        bool control_loop = true;
+
+        while (control_loop){
+
+            Console.WriteLine("**Bienvenido al conversor de unidades mas popular de la red**\n");
+            Console.WriteLine("[1] Convertir grados a Celsius a Fahrenheit");
+            Console.WriteLine("[2] Convertir dólar a pesos");
+            Console.WriteLine("[3] Convertir metros a pies");
+            Console.WriteLine("[4] Salir");
+
+        }
+    }
+
+
 
 
 }
