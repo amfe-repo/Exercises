@@ -4,9 +4,12 @@ namespace Exercises
 {
     class Program
     {
+        static Practice_02 obj = new Practice_02();
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //obj.ListOfNumbers(); //Programa #1
+
         }
     }
 }
