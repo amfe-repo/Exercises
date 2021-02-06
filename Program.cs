@@ -10,7 +10,8 @@ namespace Exercises
         {
             //obj.ListOfNumbers(); //Programa #1
             //obj.ConvertionsMenu(); //Programa #2
-
+            //obj.MultiplicationTable(); //Programa #3
+            obj.CalculateSalaryEmploye();
         }
     }
 }

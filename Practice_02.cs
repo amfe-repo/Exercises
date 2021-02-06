@@ -87,7 +87,7 @@ class Practice_02{
         float celsius_grade = 0.0f, dolars = 0.0f, meters = 0.0f;
 
         while (control_loop){
-            
+
             Console.Clear();
 
             Console.WriteLine("**Bienvenido al conversor de unidades mas popular de la red**\n\n");
@@ -147,6 +147,69 @@ class Practice_02{
             
 
         }
+
+    }
+
+    public void MultiplicationTable(){
+
+        Console.WriteLine("Tabla de multiplicar del 1 al 500\n");
+
+        for(int i = 0; i <= 500; i++){
+
+            Console.WriteLine($"{ i } * { 5 } = { i * 5 }");
+
+        }
+
+    }
+
+    public void CalculateSalaryEmploye(){
+
+        double salary = 0.00, ARS = 0.00, AFP = 0.00, ISR = 0.00, total_ars_afp = 0.00, result = 0.00;
+        string str = "";
+
+        Console.Write("Escribe tu salario: ");
+        salary = double.Parse(Console.ReadLine());
+
+        ARS = salary * 0.0304;
+        AFP = salary * 0.0287;
+
+        total_ars_afp = ARS + AFP;
+
+        result = salary - total_ars_afp;
+        result *= 12;
+
+        if(result >= 867123.01){
+
+            result -= 416220.01;
+            result *= 0.25;
+            result += 79776.00;
+            result /= 12; 
+
+        }else if(result >= 624329.01){
+
+            result -= 624329.01;
+            result *= 0.2;
+            result += 31216.00;
+            result /= 12;
+
+        }else if(result >= 416220.01){
+
+            result -= 416220.01;
+            result *= 0.15;
+            result /= 12;
+
+        }else{
+
+            result /= 12;
+
+        }
+
+        ISR = result;
+
+        str = $"\nARS = {ARS} \nAFP = {AFP} \nIRS = {ISR}";
+
+        Console.WriteLine(str);
+
     }
 
 
