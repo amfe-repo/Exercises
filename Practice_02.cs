@@ -1,8 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-class Practice_02{
-    private const int V = 1;
+class Practice02{
 
     private static void PrintList(List<int> list){
 
