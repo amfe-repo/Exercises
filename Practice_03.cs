@@ -28,15 +28,33 @@ class Practice03{
 
         int num = 0;
 
-        do
-        {
-            Console.WriteLine(++num);  
-        } while (num < 10);
+        do 
+        { Console.WriteLine(++num); } while (num < 10);
 
     }
 
     public void PairNumbers(){
-        
+
+        const int number_range = 10 * 2, number_init = 10 * 10;
+        int number_final = number_range + number_init;
+
+        for (int number_product = number_init; number_product < number_final; number_product++)
+        {   
+            if(number_product % 2 == 0){
+                Console.WriteLine(number_product);
+            }
+        }
+    }
+
+    public void LettersABC(){
+
+        Console.WriteLine("Letras de la Z hasta la A: \n");
+
+        for (int i = 90; i >= 65; i--)
+        {
+            Console.Write($"[{Convert.ToChar(i)}]");
+        }
+
     }
 
 
