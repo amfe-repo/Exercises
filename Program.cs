@@ -29,7 +29,7 @@ namespace Exercises
         }
 
         static void Practice04Main(){
-
+            obj_04.ArithmeticAverageExercise();
         }
     }
 }
