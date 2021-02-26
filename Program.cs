@@ -6,10 +6,12 @@ namespace Exercises
     {
         static Practice02 obj_02 = new Practice02();
         static Practice03 obj_03 = new Practice03();
+        static Practice04 obj_04 = new Practice04();
 
         static void Main(string[] args){
             //Practice02Main(); // Practica 2
-            Practice03Main(); //Practica 3
+            //Practice03Main(); //Practica 3
+            Practice04Main(); //Practica 4
         }
         
         static void Practice02Main(){
@@ -24,6 +26,10 @@ namespace Exercises
             //obj_03.OneToTen(); // Programa #2
             //obj_03.PairNumbers(); // Programa #3
             //obj_03.LettersABC(); //Programa #4
+        }
+
+        static void Practice04Main(){
+
         }
     }
 }

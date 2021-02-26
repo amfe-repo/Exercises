@@ -8,24 +8,30 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "/home/akme-dev/.nuget/packages/": {}
+    "C:\\Users\\Angel Fernandez\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/mnt/d/Proyectos C#/Exercises/Exercises.csproj",
+      "projectUniqueName": "D:\\Proyectos C#\\Exercises\\Exercises.csproj",
       "projectName": "Exercises",
-      "projectPath": "/mnt/d/Proyectos C#/Exercises/Exercises.csproj",
-      "packagesPath": "/home/akme-dev/.nuget/packages/",
-      "outputPath": "/mnt/d/Proyectos C#/Exercises/obj/",
+      "projectPath": "D:\\Proyectos C#\\Exercises\\Exercises.csproj",
+      "packagesPath": "C:\\Users\\Angel Fernandez\\.nuget\\packages\\",
+      "outputPath": "D:\\Proyectos C#\\Exercises\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/home/akme-dev/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Angel Fernandez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -56,7 +62,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/akme-dev/dotnet/sdk/3.1.405/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.405\\RuntimeIdentifierGraph.json"
       }
     }
   }
