@@ -1,4 +1,4 @@
-﻿using System;
+﻿using static System.Console;
 
 namespace Exercises
 {
@@ -29,7 +29,11 @@ namespace Exercises
         }
 
         static void Practice04Main(){
-            obj_04.ArithmeticAverageExercise();
+            //obj_04.ArithmeticAverageExercise(); // Programa #1
+            //obj_04.FlippedNumbersExercise(); //Programa #2
+            //obj_04.MonthDaysExercise(); //Programa #3
+            obj_04.GreaterBetweenNumbersExercise();
+            //obj_04.NamesExercices(); //Programa #5
         }
     }
 }
