@@ -32,8 +32,9 @@ namespace Exercises
             //obj_04.ArithmeticAverageExercise(); // Programa #1
             //obj_04.FlippedNumbersExercise(); //Programa #2
             //obj_04.MonthDaysExercise(); //Programa #3
-            obj_04.GreaterBetweenNumbersExercise();
+            //obj_04.GreaterBetweenNumbersExercise(); //Programa #4
             //obj_04.NamesExercices(); //Programa #5
+            //obj_04.SaveImageDataExercise(); // Programa #6
         }
     }
 }
