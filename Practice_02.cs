@@ -210,8 +210,4 @@ class Practice02{
         Console.WriteLine(str);
 
     }
-
-
-
-
 }
