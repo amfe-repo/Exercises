@@ -47,11 +47,7 @@ class ExternalPractice04{
 
         double sum = 0.0;
 
-        foreach (var item in collection){
-
-            sum += item;
-
-        }
+        foreach (var item in collection) sum += item;
 
         return sum/collection.Length;
 
@@ -75,7 +71,7 @@ class ExternalPractice04{
 
         int greater = 0;
 
-        foreach (var item in number_collection){
+        foreach (var item in number_collection) {
 
             if (item > greater) greater = item;
 
@@ -91,19 +87,31 @@ class ExternalPractice04{
 
         if (control == "max"){
 
-            for (int i = 0; i < number_collection.Length; i++)
+            for (int i = 0; i < number_collection.Length; i++) {
+
                 if (number_collection[i] > average) list_average.Add(number_collection[i]);
+
+            }   
 
         }
         else{
 
-            for (int i = 0; i < number_collection.Length; i++)
+            for (int i = 0; i < number_collection.Length; i++){
+
                 if (number_collection[i] < average) list_average.Add(number_collection[i]);
 
+            }
         }
         
         return list_average.ToArray();
 
+    }
+
+    public string VerifyAge(int age){
+
+        if (age >= 18) return $"Es mayor de edad";
+        
+        return "";
     }
     
 };

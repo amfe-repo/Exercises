@@ -37,7 +37,8 @@ namespace Exercises
             //obj_04.SaveImageDataExercise(); // Programa #6
             //obj_04.DivideNameExercise(); //Programa #7
             //obj_04.HeightExercise(); //Programa #8
-            obj_04.MultiplicationTableExercise(); //Programa #9
+            //obj_04.MultiplicationTableExercise(); //Programa #9
+            //obj_04.CreatePersonExercise(); //Programa #10
         }
     }
 }

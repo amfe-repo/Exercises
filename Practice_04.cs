@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 class Practice04{
 
-    ExternalPractice04 ExPrac04 = new ExternalPractice04();
+    ExternalPractice04 ex_prac04 = new ExternalPractice04();
 
 
     //Exercises Functions
@@ -15,9 +15,9 @@ class Practice04{
 
         str = "**Bienvenido a la calculadora de media aritmetica (4 numeros)**\n";
 
-        arr = ExPrac04.CaptureArray(4, str, 'i');
+        arr = ex_prac04.CaptureArray(4, str, 'i');
 
-        WriteLine($"\nEl promedio de {ExPrac04.GetStrArray(arr)} es: {ExPrac04.CalculateAverage(arr)}");
+        WriteLine($"\nEl promedio de {ex_prac04.GetStrArray(arr)} es: {ex_prac04.CalculateAverage(arr)}");
 
     }
 
@@ -26,7 +26,7 @@ class Practice04{
         float[] arr = new float[5];
         string str = "";
 
-        arr = ExPrac04.CaptureArray(5, str);
+        arr = ex_prac04.CaptureArray(5, str);
 
         str = "**Ingrese 5 numeros**";
     
@@ -102,9 +102,9 @@ class Practice04{
         int[] numbers_collection = new int[10];
         string str = "***Ingrese 10 numeros***\n";
 
-        numbers_collection = ExPrac04.CaptureArray(10, str, 'i');
+        numbers_collection = ex_prac04.CaptureArray(10, str, 'i');
 
-        WriteLine($"El mayor entre los numeros es {ExPrac04.GetGreaterNumber(numbers_collection)}");
+        WriteLine($"El mayor entre los numeros es {ex_prac04.GetGreaterNumber(numbers_collection)}");
 
     }
 
@@ -180,7 +180,7 @@ class Practice04{
 
             }
 
-            ExPrac04.StopConsole();
+            ex_prac04.StopConsole();
             Clear();
 
         }
@@ -204,17 +204,17 @@ class Practice04{
         float[] height_person = new float[5] {3.4f, 5.6f, 2.6f, 7.8f, 1.4f};
         float average = 0.0f;
 
-        average = (float)ExPrac04.CalculateAverage(height_person);
+        average = (float)ex_prac04.CalculateAverage(height_person);
 
-        WriteLine($"\nLas alturas son: {ExPrac04.GetStrArray(height_person)}");
+        WriteLine($"\nLas alturas son: {ex_prac04.GetStrArray(height_person)}");
 
         WriteLine($"\nEl promedio de las alturas es: {average}");
 
         WriteLine("\nLas alturas que superan el promedio son: ");
-        WriteLine(ExPrac04.GetStrArray(ExPrac04.GetAverageGreaterNumber(height_person, average, "max")));
+        WriteLine(ex_prac04.GetStrArray(ex_prac04.GetAverageGreaterNumber(height_person, average, "max")));
 
         WriteLine("\nLas alturas menores al promedio son: ");
-        WriteLine(ExPrac04.GetStrArray(ExPrac04.GetAverageGreaterNumber(height_person, average)));
+        WriteLine(ex_prac04.GetStrArray(ex_prac04.GetAverageGreaterNumber(height_person, average)));
 
     }
 
@@ -235,13 +235,21 @@ class Practice04{
 
             MultiplicationTables.ViewTableOfNumber(number, limit);
 
-            Write("\n\nPresiona una tecla para continuar");
-            ReadKey();
+            ex_prac04.StopConsole();
 
         }
         
     }
 
+    public void CreatePersonExercise(){
 
+        Person p1 = new Person();
 
+        WriteLine(p1.Greeting());
+
+        Write("\n" + ex_prac04.VerifyAge(p1.GetAge()));
+
+    }
+
+    
 };
