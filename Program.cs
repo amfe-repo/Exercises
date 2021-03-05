@@ -35,6 +35,9 @@ namespace Exercises
             //obj_04.GreaterBetweenNumbersExercise(); //Programa #4
             //obj_04.NamesExercices(); //Programa #5
             //obj_04.SaveImageDataExercise(); // Programa #6
+            //obj_04.DivideNameExercise(); //Programa #7
+            //obj_04.HeightExercise(); //Programa #8
+            obj_04.MultiplicationTableExercise(); //Programa #9
         }
     }
 }

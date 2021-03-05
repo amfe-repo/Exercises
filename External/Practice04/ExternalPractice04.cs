@@ -43,7 +43,7 @@ class ExternalPractice04{
         return arr;
     }
 
-    public double CalculateAverage(int[] collection){
+    public double CalculateAverage(dynamic collection){
 
         double sum = 0.0;
 
@@ -53,11 +53,11 @@ class ExternalPractice04{
 
         }
 
-        return sum/4;
+        return sum/collection.Length;
 
     }
 
-    public string GetStrArray(int[] collection){
+    public string GetStrArray(dynamic collection){
 
         string str = "";
 
@@ -85,5 +85,25 @@ class ExternalPractice04{
 
     }
 
+    public float[] GetAverageGreaterNumber(float[] number_collection, float average, string control = "min"){
 
+        List<float> list_average = new List<float>();
+
+        if (control == "max"){
+
+            for (int i = 0; i < number_collection.Length; i++)
+                if (number_collection[i] > average) list_average.Add(number_collection[i]);
+
+        }
+        else{
+
+            for (int i = 0; i < number_collection.Length; i++)
+                if (number_collection[i] < average) list_average.Add(number_collection[i]);
+
+        }
+        
+        return list_average.ToArray();
+
+    }
+    
 };

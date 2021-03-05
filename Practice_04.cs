@@ -185,4 +185,63 @@ class Practice04{
 
         }
     }
+
+    public void DivideNameExercise(){
+
+        string name = "";
+
+        Write("Escribe tu nombre: ");
+        name = ReadLine();
+
+        Write("\nNuevo nombre: ");
+
+        foreach (char item in name) Write($"{item} ");
+        
+    }
+
+    public void HeightExercise(){
+
+        float[] height_person = new float[5] {3.4f, 5.6f, 2.6f, 7.8f, 1.4f};
+        float average = 0.0f;
+
+        average = (float)ExPrac04.CalculateAverage(height_person);
+
+        WriteLine($"\nLas alturas son: {ExPrac04.GetStrArray(height_person)}");
+
+        WriteLine($"\nEl promedio de las alturas es: {average}");
+
+        WriteLine("\nLas alturas que superan el promedio son: ");
+        WriteLine(ExPrac04.GetStrArray(ExPrac04.GetAverageGreaterNumber(height_person, average, "max")));
+
+        WriteLine("\nLas alturas menores al promedio son: ");
+        WriteLine(ExPrac04.GetStrArray(ExPrac04.GetAverageGreaterNumber(height_person, average)));
+
+    }
+
+    public void MultiplicationTableExercise(){
+
+        int number = 0, limit = 12;
+        
+        while(true){
+
+            Clear();
+
+            Write("Escribe el numero a multiplicar: ");
+            number = int.Parse(ReadLine());
+
+            if (number < 0) break;
+
+            Write("\n\n");
+
+            MultiplicationTables.ViewTableOfNumber(number, limit);
+
+            Write("\n\nPresiona una tecla para continuar");
+            ReadKey();
+
+        }
+        
+    }
+
+
+
 };
