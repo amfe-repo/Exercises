@@ -1,5 +1,6 @@
 using static System.Console;
 using Practice06Ex01;
+using Practice06Ex02;
 
 class Practice06{
 
@@ -11,6 +12,10 @@ class Practice06{
         Teacher o_t1 = new Teacher(123, "0", "Pablo", "Ramirez", 18);
         o_t1.MyInformation();
 
+    }
+
+    public void ContactExercise() {
+        TestContact.ContactMain();
     }
 
 }
