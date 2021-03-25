@@ -88,6 +88,7 @@ struct ImageFunctions{
     public string SearchImages(List<Images> img_collection){
         
         List<String> list_images = new List<string>();
+        
         string data = "", str = "";
         int counter = 0;
 
@@ -101,7 +102,6 @@ struct ImageFunctions{
         foreach (var item in list_images) str += $"{++counter}. {item} \n";
 
         return str;
-
 
     }
         

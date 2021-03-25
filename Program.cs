@@ -7,11 +7,13 @@ namespace Exercises
         static Practice02 obj_02 = new Practice02();
         static Practice03 obj_03 = new Practice03();
         static Practice04 obj_04 = new Practice04();
+        static Practice06 obj_06 = new Practice06();
 
         static void Main(string[] args){
             //Practice02Main(); // Practica 2
             //Practice03Main(); //Practica 3
-            Practice04Main(); //Practica 4
+            //Practice04Main(); //Practica 4 
+            Practice06Main();    
         }
         
         static void Practice02Main(){
@@ -39,6 +41,12 @@ namespace Exercises
             //obj_04.HeightExercise(); //Programa #8
             //obj_04.MultiplicationTableExercise(); //Programa #9
             //obj_04.CreatePersonExercise(); //Programa #10
+        }
+
+        static void Practice06Main(){
+            //obj_06.PersonClassExercise(); //Programa #1
+            //obj_06.ContactExercise(); //Programa #2
+            obj_06.ThreeClassesExercises();
         }
     }
 }
