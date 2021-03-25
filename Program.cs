@@ -46,6 +46,7 @@ namespace Exercises
         static void Practice06Main(){
             //obj_06.PersonClassExercise(); //Programa #1
             //obj_06.ContactExercise(); //Programa #2
+            obj_06.ThreeClassesExercises();
         }
     }
 }

@@ -1,6 +1,7 @@
 using static System.Console;
 using Practice06Ex01;
 using Practice06Ex02;
+using Practice06Ex3;
 
 class Practice06{
 
@@ -15,7 +16,15 @@ class Practice06{
     }
 
     public void ContactExercise() {
+
         TestContact.ContactMain();
+
+    }
+
+    public void ThreeClassesExercises() {
+
+        C obj = new C();
+
     }
 
 }
